@@ -3,7 +3,7 @@ require "bundler/capistrano"
 server "106.187.42.93", :web, :app, :db, primary: true
 
 set :application, "blog"
-set :user, "deployer"
+set :user, "root"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
